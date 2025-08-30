@@ -1,6 +1,6 @@
 # envsc-704-case2
 
-1. nc_file : ERA5; 2m height temperature; 3-hourly data (00,03,06,09,12,18,21 UTC), everyday, each month; 1981-2021;
+1. nc_file : ERA5; 2m height temperature; 3-hourly data (00, 03, 06, 09, 12, 18, 21 UTC), everyday, each month; 1981-2021;
              coordinates location for the new station : N = −83.3030, S = −84.3030, W = 146.0891, E = 147.0891;
              [link to download](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download);
    
