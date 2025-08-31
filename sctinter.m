@@ -2,7 +2,7 @@
 
 %1_Load data
 coastline = shaperead('CAIS.shp');       % EPSG : 3031 (m)
-D = readtable("allsta_75.xlsx");             
+D = readtable("allsta_25.xlsx");             
 antCrs = projcrs(3031);
 lat=D{:,3}; lon=D{:,4}; temp=D{:,5};   %temp change manually %JAN =5 %des
 mask = temp ~= 0;       %only use non zero value for
@@ -117,13 +117,13 @@ plot(nx, ny, '^', 'MarkerSize', 10, ...
     'MarkerFaceColor', 'w');      % triangle fill color white
 
 %15_Saving the figure
-saveas(gcf, fullfile('1_75.png'));   %name file change manually
+saveas(gcf, fullfile('1_25.png'));   %name file change manually
 
 %16_Extract data for new station
 newStationTemp = F(nx, ny);  
 
 %17_Saving new station temperature in excel
-outFile   = ('new_temp_75.xlsx');
+outFile   = ('new_temp_25.xlsx');
 val       = newStationTemp;  
 monthIdx  = 1;               % 1=Jan, 2=Feb...    %Manually change
 
@@ -133,3 +133,4 @@ rangeCell = sprintf('%s1', colLetter);  % first row
 
 %19_Sheet and cell setting
 writematrix(val, outFile, 'Sheet', 1, 'Range', rangeCell);
+
