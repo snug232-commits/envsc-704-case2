@@ -4,7 +4,7 @@
              coordinates location for the new station : N = −83.3030, S = −84.3030, W = 146.0891, E = 147.0891;
              [link to download](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels?tab=download);
    
-3. allsta_75.xlsx : excel for all aws temperature data monthly average 75% availability; 1981-2021
+3. allsta_25.xlsx : excel for all aws temperature data monthly average 25% availability; 1981-2021
 
 4. sctinter.m : script file for display allsta_75.xlsx by interpolation in png;
                 extract temperature for the new station in excel
